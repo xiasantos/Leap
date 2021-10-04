@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{DA9A2D6E-40F6-AB31-DF64-7C1C67DA9408}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/StartAnim.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player.cs" Line="19" Column="6" />
+      <File FileName="Assets/Scripts/CameraMovement.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Loopingbackground.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/SpawnObstacles.cs" Line="30" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/GameOver.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/ScoreManager.cs" Line="9" Column="27" />
+      <File FileName="Assets/Scripts/StartAnim.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Leap" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="83066b11-72ce-4128-8a12-5e6391d9050e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
