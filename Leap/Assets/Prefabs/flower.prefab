@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2256640451874483414}
   - component: {fileID: 2256640451874483415}
   - component: {fileID: 1968742789692927993}
+  - component: {fileID: -7652695883938160699}
   m_Layer: 0
   m_Name: flower
   m_TagString: Untagged
@@ -147,3 +148,15 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &-7652695883938160699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2256640451874483408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84b3c316c9f843fba9385f79daebfa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
