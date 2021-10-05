@@ -9,7 +9,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     private float score;
 
-    // Update is called once per frame
+ 
     void Update()
     {
         if(GameObject.FindGameObjectWithTag("Player") != null)

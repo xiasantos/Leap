@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public GameObject gameOverPanel;
+    public GameObject toHide;
 
    
     void Update()
@@ -13,6 +14,7 @@ public class GameOver : MonoBehaviour
      if(GameObject.FindGameObjectWithTag("Player") == null)
         {
             gameOverPanel.SetActive(true);
+            toHide.SetActive(false);
         }
     }
 

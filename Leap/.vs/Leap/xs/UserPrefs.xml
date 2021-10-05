@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{DA9A2D6E-40F6-AB31-DF64-7C1C67DA9408}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Obstacle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreManager.cs">
     <Files>
       <File FileName="Assets/Scripts/SpawnObstacles.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/SpawnBorderObstacles.cs" Line="48" Column="10" />
-      <File FileName="Assets/Scripts/StartAnimation.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/SpawnBorderObstacles.cs" />
+      <File FileName="Assets/Scripts/StartAnimation.cs" />
       <File FileName="Assets/Scripts/Obstacle.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameOver.cs" Line="15" Column="10" />
+      <File FileName="Assets/Scripts/StartGame.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/ScoreManager.cs" Line="12" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +15,7 @@
           <Node name="Leap" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Obstacle.cs" selected="True" />
+                <Node name="ScoreManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="09b70057-60f3-4495-8b6c-3fd168eb91f4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f6e429e-2140-4d45-99ef-d7b0332073a1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/sofia/Documents/GitHub/Leap/Leap/Assets/Scripts/StartAnimation.cs" relfile="Assets/Scripts/StartAnimation.cs" line="18" column="13" />
