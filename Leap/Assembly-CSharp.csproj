@@ -59,11 +59,13 @@
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/CameraMovement.cs" />
     <Compile Include="Assets/Scripts/Loopingbackground.cs" />
-    <Compile Include="Assets/Scripts/SpawnObstacles.cs" />
+    <Compile Include="Assets\Scripts\SpawnBorderObstacles.cs" />
     <Compile Include="Assets/Scripts/Obstacle.cs" />
     <Compile Include="Assets/Scripts/GameOver.cs" />
     <Compile Include="Assets/Scripts/ScoreManager.cs" />
     <Compile Include="Assets/Scripts/StartAnimation.cs" />
+    <Compile Include="Assets\Scripts\SpawnBorObstacles.cs" />
+    <Compile Include="borderLeft\getposition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
