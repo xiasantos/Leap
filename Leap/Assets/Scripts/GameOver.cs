@@ -7,11 +7,15 @@ public class GameOver : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public GameObject toHide;
+    public GameObject player;
 
-   
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     void Update()
     {
-     if(GameObject.FindGameObjectWithTag("Player") == null)
+     if (player == null)
         {
             gameOverPanel.SetActive(true);
             toHide.SetActive(false);

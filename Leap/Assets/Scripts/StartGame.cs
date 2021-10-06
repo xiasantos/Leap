@@ -2,20 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class StartGame : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    private Color color;
-    private Animator playerAnimator;
+    public static event Action GameStarted;
+    private bool gameRuning = false;
 
-    void Start()
+    private void Update()
     {
-        textComponent = GetComponent<TextMeshProUGUI>();
-        color = textComponent.color;
+        if (gameRuning)
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            gameRuning = true;
+            textComponent.enabled = false;
+            GameStarted?.Invoke();
+        }
+
     }
-
-
-
 }
-

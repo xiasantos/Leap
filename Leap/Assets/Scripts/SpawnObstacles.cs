@@ -10,10 +10,32 @@ public class SpawnObstacles : MonoBehaviour
     public float minY;
     public float timebetweenSpawn;
     private float spawnTime;
+    private bool gameRuning;
+
+    private void OnEnable()
+    {
+        StartGame.GameStarted += OnStartGame;
+    }
+
+    private void OnDisable()
+    {
+        StartGame.GameStarted -= OnStartGame;
+    }
+
+    private void OnStartGame()
+    {
+        gameRuning = true;
+    }
+
 
     void Update()
     {
-       if(Time.time >spawnTime)
+        if (!gameRuning)
+        {
+            return;
+        }
+
+        if (Time.time >spawnTime)
         {
             Spawn();
             spawnTime = Time.time + timebetweenSpawn;

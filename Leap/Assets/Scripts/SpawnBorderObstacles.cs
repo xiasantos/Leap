@@ -12,6 +12,22 @@ public class SpawnBorderObstacles : MonoBehaviour
     public float timebetweenSpawn;
     private float spawnTime;
     private List<float> positions;
+    private bool gameRuning;
+
+    private void OnEnable()
+    {
+        StartGame.GameStarted += OnStartGame;
+    }
+
+    private void OnDisable()
+    {
+        StartGame.GameStarted -= OnStartGame;
+    }
+
+    private void OnStartGame()
+    {
+        gameRuning = true;
+    }
 
     private void Start()
     {
@@ -24,6 +40,11 @@ public class SpawnBorderObstacles : MonoBehaviour
 
     void Update()
     {
+        if (!gameRuning)
+        {
+            return;
+        }
+
         if (Time.time > spawnTime)
         {
             Spawn();

@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class ObstacleGood : MonoBehaviour
 {
-    private GameObject player;
-
+    [SerializeField] GameObject collectibleNumPrefab;
+    ScoreManager scoreManager;
+    public int points;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Border")
-        { Destroy(this.gameObject);
-        }
-
-
-        if (collision.tag == "Player")
+        if(collision.gameObject.CompareTag( "Border"))
         {
-           // Destroy(player.gameObject);
+            Destroy(this.gameObject);
         }
+
+        else if(collision.gameObject.CompareTag("Player"))
+        {
+                scoreManager.AddScore(points);
+
+                Destroy(this.gameObject);
+
+            Destroy(Instantiate(collectibleNumPrefab, this.transform.position, Quaternion.identity), 1f);
+        }
+
+
+        
     }
 }
