@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float playerSpeed;
     public Rigidbody2D rb;
+    public Vector2 jumpHeight;
+    public float playerSpeed;
+    public Animator frogAnimator;
+
     private Vector2 playerDirection;
     private bool gameRuning;
+    private bool jumped;
 
     private void OnEnable()
     {
@@ -22,8 +24,13 @@ public class Player : MonoBehaviour
     private void OnStartGame()
     {
         gameRuning = true;
+        rb.gravityScale = 5.0f;
     }
 
+    private void Awake()
+    {
+        rb.gravityScale = 0.0f;
+    }
 
     void Update()
     {
@@ -33,12 +40,33 @@ public class Player : MonoBehaviour
         }
 
         float directionX = Input.GetAxisRaw("Horizontal");
-        playerDirection = new Vector2(directionX, 0).normalized;
+        float directionY = Input.GetAxisRaw("Vertical");
+        playerDirection = new Vector2(directionX, directionY).normalized;
+
+        if (Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            jumped = true;
+            frogAnimator.SetBool("Jump", jumped);
+        }
+      
     }
 
    
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(playerDirection.x * playerSpeed, 0);
+        if (!gameRuning)
+        {
+            return;
+        }
+
+        if (jumped) {
+            rb.AddForce(jumpHeight, ForceMode2D.Force);
+            jumped = false;
+            frogAnimator.SetBool("Jump", jumped);
+        }
+
+        var speedX = playerDirection.x * playerSpeed;
+        var speedY = Mathf.Clamp(rb.velocity.y, 0.0f, 100.0f);
+        rb.velocity = new Vector2(speedX, speedY);
     }
 }
