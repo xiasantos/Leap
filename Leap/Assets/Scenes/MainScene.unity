@@ -215,7 +215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000091552734}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &42564528
@@ -231,8 +231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 42564529}
-  animatedCollectibles: []
-  target: {fileID: 0}
 --- !u!114 &42564529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,6 +1008,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865320436}
   m_CullTransparentMesh: 1
+--- !u!1 &913949674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8277435765443887931, guid: edebe96e028be48a0934e5a5e4b0accd, type: 3}
+  m_PrefabInstance: {fileID: 8277435766491593112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &919296021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1307,7 @@ GameObject:
   - component: {fileID: 1057372290}
   - component: {fileID: 1057372292}
   - component: {fileID: 1057372291}
+  - component: {fileID: 1057372293}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -1369,6 +1373,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057372289}
   m_CullTransparentMesh: 1
+--- !u!114 &1057372293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057372289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50826c508df0f4a2fbe7dd18e6f17be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 2042737159}
 --- !u!4 &1119730342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8277435765443887934, guid: edebe96e028be48a0934e5a5e4b0accd, type: 3}
@@ -1574,7 +1591,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 1057372289}
   toHide: {fileID: 1777308818}
-  player: {fileID: 0}
+  player: {fileID: 913949674}
+  finalScoreComponent: {fileID: 1057372293}
+  scoreManagerComponent: {fileID: 42564529}
 --- !u!114 &1183634969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2423,7 +2442,6 @@ GameObject:
   - component: {fileID: 2042737157}
   - component: {fileID: 2042737160}
   - component: {fileID: 2042737159}
-  - component: {fileID: 2042737158}
   m_Layer: 5
   m_Name: ScoreTXT
   m_TagString: Untagged
@@ -2450,21 +2468,6 @@ RectTransform:
   m_AnchoredPosition: {x: 51.25, y: 25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2042737158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042737156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dce5729173ba4b71aa4ff61eb3bf750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 2042737159}
-  animatedCollectibles: []
-  target: {fileID: 0}
 --- !u!114 &2042737159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2864,11 +2867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8687052501461694702, guid: 6bb9c1994f74949e7b66b9f625d8b99e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.52
+      value: -21.6
       objectReference: {fileID: 0}
     - target: {fileID: 8687052501461694702, guid: 6bb9c1994f74949e7b66b9f625d8b99e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.31
+      value: -6.86
       objectReference: {fileID: 0}
     - target: {fileID: 8687052501461694702, guid: 6bb9c1994f74949e7b66b9f625d8b99e, type: 3}
       propertyPath: m_LocalPosition.z
