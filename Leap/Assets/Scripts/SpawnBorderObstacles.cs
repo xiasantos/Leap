@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnBorderObstacles : MonoBehaviour
 {
     public List<GameObject> Obstacles;
-    public GameObject borderLeft;
-    public GameObject borderRight;
+    public float borderLeft;
+    public float borderRight;
     public float maxY;
     public float minY;
     public float timebetweenSpawn;
@@ -32,8 +32,8 @@ public class SpawnBorderObstacles : MonoBehaviour
     private void Start()
     {
         positions = new List<float>() {
-            borderLeft.transform.position.x,
-            borderRight.transform.position.x
+            borderLeft,
+            borderRight
         };
     }
 

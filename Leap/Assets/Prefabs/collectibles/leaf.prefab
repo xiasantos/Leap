@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8369598806571178058}
   - component: {fileID: 2292289872051458489}
   - component: {fileID: 9862628781231954}
-  - component: {fileID: 334964198580505420}
   m_Layer: 0
   m_Name: leaf
   m_TagString: Untagged
@@ -139,21 +138,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84b3c316c9f843fba9385f79daebfa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleNumPrefab: {fileID: 0}
-  points: 0
---- !u!111 &334964198580505420
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8369598806571178059}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: b6640a7a279c74fa48b424ad2bffef34, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: b6640a7a279c74fa48b424ad2bffef34, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  points: 15

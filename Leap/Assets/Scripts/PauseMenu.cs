@@ -6,6 +6,13 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
 
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("p")||Input.GetKeyDown("escape"))
+        { pauseMenuUI.SetActive(true);
+        }
+    }
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
