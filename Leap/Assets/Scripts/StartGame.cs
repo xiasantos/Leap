@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public static event Action GameStarted;
     private bool gameRuning = false;
+   
 
     private void Update()
     {
@@ -22,6 +23,7 @@ public class StartGame : MonoBehaviour
             gameRuning = true;
             textComponent.enabled = false;
             GameStarted?.Invoke();
+          
         }
 
     }
