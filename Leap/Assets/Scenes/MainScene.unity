@@ -1619,7 +1619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1121852230}
-  toHide: {fileID: 1777308818}
 --- !u!1 &1186282683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,7 +2089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1777308819
 MonoBehaviour:
   m_ObjectHideFlags: 0
