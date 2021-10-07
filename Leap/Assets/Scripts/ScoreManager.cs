@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using DG.Tweening;
-using System.Collections.Generic;
+
 
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     private float score;
     private GameObject player;
-    [SerializeField] List<GameObject> animatedCollectibles;
-    [SerializeField] Transform target;
 
 
     private void Awake()

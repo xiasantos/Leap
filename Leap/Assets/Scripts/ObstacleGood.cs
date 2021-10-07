@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObstacleGood : MonoBehaviour
 {
-    [SerializeField] GameObject collectibleNumPrefab;
     ScoreManager scoreManager;
     public int points;
 
@@ -26,7 +25,6 @@ public class ObstacleGood : MonoBehaviour
 
                 Destroy(this.gameObject);
 
-            Destroy(Instantiate(collectibleNumPrefab, this.transform.position, Quaternion.identity), 1f);
         }
 
 
