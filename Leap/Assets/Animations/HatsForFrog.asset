@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: HatsForFrog
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Hats
+    m_Hash: -1263627603
+    m_CategoryList:
+    - m_Name: Strawberry
+      m_Hash: 0
+      m_Sprite: {fileID: 21300000, guid: 4982f81a1bd4e45e0a074403b4d9a166, type: 3}
+    - m_Name: Cowboy
+      m_Hash: 0
+      m_Sprite: {fileID: 21300000, guid: d10cbc7b42822468ea5552cfa6d38289, type: 3}
+    - m_Name: 
+      m_Hash: 0
+      m_Sprite: {fileID: 0}
+    - m_Name: 
+      m_Hash: 0
+      m_Sprite: {fileID: 0}
