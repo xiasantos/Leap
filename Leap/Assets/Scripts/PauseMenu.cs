@@ -10,7 +10,8 @@ public class PauseMenu : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown("p")||Input.GetKeyDown("escape"))
-        { pauseMenuUI.SetActive(true);
+        {
+            Pause();
         }
     }
     public void Pause()
