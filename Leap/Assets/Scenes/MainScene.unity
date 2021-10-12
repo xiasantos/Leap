@@ -729,6 +729,7 @@ GameObject:
   - component: {fileID: 225676042}
   - component: {fileID: 225676044}
   - component: {fileID: 225676043}
+  - component: {fileID: 225676045}
   m_Layer: 0
   m_Name: hidden character (3)
   m_TagString: Untagged
@@ -795,6 +796,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225676041}
   m_CullTransparentMesh: 1
+--- !u!114 &225676045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225676041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad1fdcd4169943c8ae6f593ed707210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatScoreText: {fileID: 244411776}
+  hatPanel: {fileID: 1036919003}
+  countHatsObject: {fileID: 11400000, guid: 45ed709c2b8594e9887a5ae9a69a2f4c, type: 2}
+  valueToCollect: 500
 --- !u!1 &244411774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &387580224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1684,7 +1701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &749949642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2648,7 +2665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1036919004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2863,6 +2880,7 @@ GameObject:
   - component: {fileID: 1095065730}
   - component: {fileID: 1095065732}
   - component: {fileID: 1095065731}
+  - component: {fileID: 1095065733}
   m_Layer: 0
   m_Name: hidden character (2)
   m_TagString: Untagged
@@ -2929,6 +2947,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095065729}
   m_CullTransparentMesh: 1
+--- !u!114 &1095065733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095065729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad1fdcd4169943c8ae6f593ed707210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatScoreText: {fileID: 1376117038}
+  hatPanel: {fileID: 1376117036}
+  countHatsObject: {fileID: 11400000, guid: 9661483b50dff429faaefb16435e67ff, type: 2}
+  valueToCollect: 100
 --- !u!4 &1119730342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8277435765443887934, guid: edebe96e028be48a0934e5a5e4b0accd, type: 3}
@@ -3548,6 +3582,7 @@ GameObject:
   - component: {fileID: 1507902414}
   - component: {fileID: 1507902416}
   - component: {fileID: 1507902415}
+  - component: {fileID: 1507902417}
   m_Layer: 0
   m_Name: hidden character (1)
   m_TagString: Untagged
@@ -3614,6 +3649,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507902413}
   m_CullTransparentMesh: 1
+--- !u!114 &1507902417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507902413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad1fdcd4169943c8ae6f593ed707210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatScoreText: {fileID: 130160849}
+  hatPanel: {fileID: 1989376473}
+  countHatsObject: {fileID: 11400000, guid: 8abb2ae77076a439d81607be0a45a55a, type: 2}
+  valueToCollect: 50
 --- !u!1 &1573778913
 GameObject:
   m_ObjectHideFlags: 0
@@ -4252,6 +4303,7 @@ GameObject:
   - component: {fileID: 1858578106}
   - component: {fileID: 1858578108}
   - component: {fileID: 1858578107}
+  - component: {fileID: 1858578109}
   m_Layer: 0
   m_Name: hidden character (4)
   m_TagString: Untagged
@@ -4318,6 +4370,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858578105}
   m_CullTransparentMesh: 1
+--- !u!114 &1858578109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858578105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad1fdcd4169943c8ae6f593ed707210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatScoreText: {fileID: 1922873840}
+  hatPanel: {fileID: 1944289521}
+  countHatsObject: {fileID: 11400000, guid: 03e48dc2efeb046f3bebcd118ad5d4bc, type: 2}
+  valueToCollect: 1000
 --- !u!1 &1861017885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5168,7 +5236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1944289522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5300,7 +5368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1989376474
 RectTransform:
   m_ObjectHideFlags: 0

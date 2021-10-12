@@ -11,6 +11,4 @@ public class FinalScore : MonoBehaviour
     { score.text = txt;
     }
 
-
-
 }

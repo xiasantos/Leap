@@ -27,13 +27,11 @@ public class ScoreManager : MonoBehaviour
         gameRuning = true;
     }
 
-        private void Awake()
+    private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-
-  
     void FixedUpdate()
     {
         if (!gameRuning)

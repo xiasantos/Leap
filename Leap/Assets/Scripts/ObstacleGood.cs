@@ -6,13 +6,12 @@ public class ObstacleGood : MonoBehaviour
 {
     ScoreManager scoreManager;
     public int points;
+    public CountHats countHatsObject;
 
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
     }
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,6 +24,8 @@ public class ObstacleGood : MonoBehaviour
         {
             scoreManager.AddScore(points);
             Destroy(this.gameObject);
+            countHatsObject.AddCount(1);
+
         }
 
     }

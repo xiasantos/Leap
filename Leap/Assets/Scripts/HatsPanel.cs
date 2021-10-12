@@ -21,9 +21,6 @@ public class HatsPanel : MonoBehaviour
     public AnimatorProvider dragonflyProvider;
     public AnimatorProvider strawberryProvider;
 
-
-    private int activeSpriteIndex = 0;
-
     public void Open()
     {
         hatsPanel.SetActive(true);

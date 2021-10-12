@@ -166,3 +166,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 10
+  countHatsObject: {fileID: 11400000, guid: 45ed709c2b8594e9887a5ae9a69a2f4c, type: 2}
