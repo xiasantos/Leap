@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     public Vector2 jumpHeight;
     public float playerSpeed;
     public Animator frogAnimator;
+    public AnimatorProvider x;
 
     private Vector2 playerDirection;
     private bool gameRuning;
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb.gravityScale = 0.0f;
+        frogAnimator = x.y;
     }
 
     void Update()
