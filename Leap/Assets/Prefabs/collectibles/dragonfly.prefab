@@ -165,5 +165,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84b3c316c9f843fba9385f79daebfa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleNumPrefab: {fileID: 0}
   points: 10
+  crunchAudio: {fileID: 9081862546617685799, guid: 7e6e387fffc3d464f91c419902512132, type: 3}

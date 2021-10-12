@@ -161,3 +161,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 3
+  crunchAudio: {fileID: 9081862546617685799, guid: 7e6e387fffc3d464f91c419902512132, type: 3}

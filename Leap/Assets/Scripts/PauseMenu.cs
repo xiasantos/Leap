@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+    public AudioSource frogSound;
 
 
     private void Update()
@@ -18,6 +19,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        frogSound.Play();
     }
 
    public void Resume()
