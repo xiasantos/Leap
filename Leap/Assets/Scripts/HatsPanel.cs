@@ -21,6 +21,9 @@ public class HatsPanel : MonoBehaviour
     public AnimatorProvider dragonflyProvider;
     public AnimatorProvider strawberryProvider;
 
+
+    private int activeSpriteIndex = 0;
+
     public void Open()
     {
         hatsPanel.SetActive(true);
@@ -66,5 +69,7 @@ public class HatsPanel : MonoBehaviour
         player.GetComponent<Animator>().runtimeAnimatorController = strawberryProvider.animatorController;
         player.GetComponent<SpriteRenderer>().sprite = strawberrySprite;
     }
-    
-}
+
+
+       
+    }
