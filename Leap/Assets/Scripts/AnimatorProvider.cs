@@ -1,10 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject", order = 1)]
+[CreateAssetMenu(fileName = "Animator Provider", menuName = "Scriptable Objects/Animator Provider")]
 public class AnimatorProvider : ScriptableObject
 {
-    public string prefabName;
-
-    public int numberOfPrefabsToCreate;
-    public Vector3[] spawnPoints;
+    public RuntimeAnimatorController animatorController;
 }

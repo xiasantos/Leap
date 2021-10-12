@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
     public Vector2 jumpHeight;
     public float playerSpeed;
     public Animator frogAnimator;
-    // public AnimatorProvider x;
     public AudioSource dieSound;
     public AudioSource crunchSound;
 
@@ -33,7 +32,6 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb.gravityScale = 0.0f;
-        //  frogAnimator = x.y;
     }
 
     void Update()
