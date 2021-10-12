@@ -6,7 +6,9 @@ public class Player : MonoBehaviour
     public Vector2 jumpHeight;
     public float playerSpeed;
     public Animator frogAnimator;
-   // public AnimatorProvider x;
+    // public AnimatorProvider x;
+    public AudioSource dieSound;
+    public AudioSource crunchSound;
 
     private Vector2 playerDirection;
     private bool gameRuning;
@@ -31,7 +33,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb.gravityScale = 0.0f;
-      //  frogAnimator = x.y;
+        //  frogAnimator = x.y;
     }
 
     void Update()
@@ -50,10 +52,10 @@ public class Player : MonoBehaviour
             jumped = true;
             frogAnimator.SetBool("Jump", jumped);
         }
-      
+
     }
 
-   
+
     void FixedUpdate()
     {
         if (!gameRuning)
@@ -61,7 +63,8 @@ public class Player : MonoBehaviour
             return;
         }
 
-        if (jumped) {
+        if (jumped)
+        {
             rb.AddForce(jumpHeight, ForceMode2D.Force);
             jumped = false;
             frogAnimator.SetBool("Jump", jumped);
@@ -70,5 +73,19 @@ public class Player : MonoBehaviour
         var speedX = playerDirection.x * playerSpeed;
         var speedY = Mathf.Clamp(rb.velocity.y, 0.0f, 100.0f);
         rb.velocity = new Vector2(speedX, speedY);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Collectible"))
+        {
+            crunchSound.Play();
+        }
+
+        else if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            dieSound.Play();
+        }
     }
 }

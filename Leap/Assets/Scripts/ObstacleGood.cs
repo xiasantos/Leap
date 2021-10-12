@@ -6,13 +6,10 @@ public class ObstacleGood : MonoBehaviour
 {
     ScoreManager scoreManager;
     public int points;
-    public GameObject crunchAudio;
-    private AudioSource aS;
 
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
-        aS = crunchAudio.GetComponent<AudioSource>();
     }
 
 
@@ -27,10 +24,7 @@ public class ObstacleGood : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player"))
         {
             scoreManager.AddScore(points);
-
             Destroy(this.gameObject);
-            aS.Play();
-
         }
 
     }

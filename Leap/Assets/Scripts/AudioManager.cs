@@ -5,15 +5,42 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource frogSound;
+    public AudioSource swooshSound;
 
-     void Update()
+    private bool gameRuning;
+
+    private void OnEnable()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        StartGame.GameStarted += OnStartGame;
+    }
+
+    private void OnDisable()
+    {
+        StartGame.GameStarted -= OnStartGame;
+    }
+
+    private void OnStartGame()
+    {
+        gameRuning = true;
+    }
+
+
+    void Update()
+    {
+        if (!gameRuning)
         {
-            if (!frogSound.isPlaying)
-            {
-                frogSound.Play();
-            }
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+
+            frogSound.Play();
+
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+
+            swooshSound.Play();
         }
     }
 }
