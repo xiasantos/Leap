@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8369598806571178058}
   - component: {fileID: 2292289872051458489}
   - component: {fileID: 9862628781231954}
+  - component: {fileID: -5657208057844316510}
   m_Layer: 0
   m_Name: leaf
   m_TagString: Collectible
@@ -140,3 +141,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 15
   countHatsObject: {fileID: 11400000, guid: 03e48dc2efeb046f3bebcd118ad5d4bc, type: 2}
+--- !u!114 &-5657208057844316510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8369598806571178059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73097c2eb13e64e3194071770a142226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

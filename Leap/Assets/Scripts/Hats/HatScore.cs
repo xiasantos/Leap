@@ -6,6 +6,8 @@ public class HatScore : MonoBehaviour
     public CountHats countHatsObject;
     public GameObject hatPanel;
     public TextMeshProUGUI hatScoreText;
+    public string frogName;
+    public GameObject hatIMG;
 
     public int valueToCollect;
 
@@ -15,6 +17,12 @@ public class HatScore : MonoBehaviour
     {
         hats = countHatsObject.hatsCollected;
         hatScoreText.text = $"{hats}/{valueToCollect}";
-        hatPanel.SetActive(hats == valueToCollect);
+
+        if (hats >= valueToCollect)
+        {
+            hatPanel.SetActive(true);
+            hatIMG.SetActive(false);
+            hatScoreText.text = $"{frogName}";
+        }
     }
 }

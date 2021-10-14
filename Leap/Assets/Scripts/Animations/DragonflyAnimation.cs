@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DragonflyAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        
+        transform.DOShakePosition(1, 1, 3, 90, false, true)
+             .SetLoops(10, LoopType.Restart)
+             .SetId("dragonfly")
+             .ManualUpdate(1.0f, 1.0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            DOTween.Kill("dragonfly");
+        }
     }
 }

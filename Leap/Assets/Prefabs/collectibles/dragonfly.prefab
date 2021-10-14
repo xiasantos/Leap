@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6552909074089091960}
   - component: {fileID: 6552909074089091966}
   - component: {fileID: -4461696369241755694}
+  - component: {fileID: -6926045358572712565}
   m_Layer: 0
   m_Name: dragonfly
   m_TagString: Collectible
@@ -167,3 +168,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 10
   countHatsObject: {fileID: 11400000, guid: 45ed709c2b8594e9887a5ae9a69a2f4c, type: 2}
+--- !u!114 &-6926045358572712565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552909074089091963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88116d4b113844f25bd92c0ad59af7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
