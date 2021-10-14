@@ -7,7 +7,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public AudioSource frogSound;
 
-
     private void Update()
     {
         if (Input.GetKeyDown("p")||Input.GetKeyDown("escape"))

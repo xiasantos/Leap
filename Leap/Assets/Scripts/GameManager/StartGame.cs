@@ -6,12 +6,13 @@ using System;
 
 public class StartGame : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
-    public GameObject star;
-    public static event Action GameStarted;
-    private bool gameRuning = false;
     public Animator playerAnimator;
-   
+    public GameObject star;
+    public GameObject pause;
+    public TextMeshProUGUI textComponent;
+    public static event Action GameStarted;
+
+    private bool gameRuning = false;
 
     private void Update()
     {
@@ -23,12 +24,11 @@ public class StartGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             gameRuning = true;
+            pause.SetActive(true);
+            star.SetActive(false);
             textComponent.enabled = false;
             GameStarted?.Invoke();
             playerAnimator.enabled = true;
-            star.SetActive(false);
-
         }
-
     }
 }

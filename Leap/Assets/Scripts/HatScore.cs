@@ -1,36 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class HatScore : MonoBehaviour
 {
-    public TextMeshProUGUI hatScoreText;
-    public GameObject hatPanel;
-
     public CountHats countHatsObject;
+    public GameObject hatPanel;
+    public TextMeshProUGUI hatScoreText;
+
     public int valueToCollect;
 
     private int hats;
 
-    private void Start()
+    private void OnEnable()
     {
-        countHatsObject.hatsCollected = hats;
-    }
-    private void FixedUpdate()
-    {
+        hats = countHatsObject.hatsCollected;
         hatScoreText.text = $"{hats}/{valueToCollect}";
-
-        if (hats == valueToCollect)
-        {
-            hatPanel.SetActive(true);
-        }
-  
+        hatPanel.SetActive(hats == valueToCollect);
     }
-
 }
-
-    
-
- 
-

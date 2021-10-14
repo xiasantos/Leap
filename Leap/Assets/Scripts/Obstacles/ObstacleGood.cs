@@ -23,9 +23,8 @@ public class ObstacleGood : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player"))
         {
             scoreManager.AddScore(points);
-            Destroy(this.gameObject);
             countHatsObject.AddCount(1);
-
+            Destroy(this.gameObject);
         }
 
     }

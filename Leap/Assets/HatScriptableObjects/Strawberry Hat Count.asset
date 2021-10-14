@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b6d8cf25c7b446d9acad2975292025, type: 3}
   m_Name: Strawberry Hat Count
   m_EditorClassIdentifier: 
-  hatsCollected: 0
+  hatsCollected: 1
+  hatsCollectedCount: 0
+  hatId: strawberry

@@ -5,17 +5,17 @@ public class CountHats : ScriptableObject
 {
     public int hatsCollected;
     public int hatsCollectedCount;
+    public string hatId;
 
     void OnEnable()
     {
-        hatsCollected = PlayerPrefs.GetInt("HatsCount", hatsCollected);
+        hatsCollected = PlayerPrefs.GetInt(hatId);
     }
 
     public void AddCount(int amount)
-    { 
+    {
         hatsCollected += amount;
-        Debug.Log($"Add {amount}!");
-
-        PlayerPrefs.SetInt("HatsCount", hatsCollected);
+        PlayerPrefs.SetInt(hatId, hatsCollected);
+        Debug.Log($"read {PlayerPrefs.GetInt(hatId)}!");
     }
 }
