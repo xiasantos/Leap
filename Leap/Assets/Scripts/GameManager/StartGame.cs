@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using DG.Tweening;
 
 public class StartGame : MonoBehaviour
 {
@@ -29,6 +28,7 @@ public class StartGame : MonoBehaviour
             textComponent.enabled = false;
             GameStarted?.Invoke();
             playerAnimator.enabled = true;
+            DOTween.Kill("pulseFade");
         }
     }
 }
