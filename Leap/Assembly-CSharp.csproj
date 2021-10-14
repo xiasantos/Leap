@@ -55,32 +55,33 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Obstacles/SpawnObstacles.cs" />
     <Compile Include="Assets/Scripts/Player/Player.cs" />
-    <Compile Include="Assets/Scripts/HatsPanel.cs" />
+    <Compile Include="Assets/Scripts/Hats/HatsPanel.cs" />
     <Compile Include="Assets/Scripts/GameManager/StartGame.cs" />
     <Compile Include="Assets/Scripts/Obstacles/Obstacle.cs" />
-    <Compile Include="Assets/Scripts/ScoreManager.cs" />
+    <Compile Include="Assets/Scripts/GameManager/ScoreManager.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModulePhysics.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleAudio.cs" />
     <Compile Include="Assets/Scripts/Player/AnimatorProvider.cs" />
     <Compile Include="Assets/Scripts/GameManager/AudioManager.cs" />
     <Compile Include="Assets/Scripts/GameManager/CameraMovement.cs" />
-    <Compile Include="Assets/Scripts/Loopingbackground.cs" />
+    <Compile Include="Assets/Scripts/GameManager/Loopingbackground.cs" />
     <Compile Include="Assets/Scripts/Obstacles/ObstacleWAnimation.cs" />
     <Compile Include="Assets/Scripts/Obstacles/SpawnBorderObstacles.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets/Scripts/GameManager/PauseMenu.cs" />
-    <Compile Include="Assets/Scripts/FinalScore.cs" />
+    <Compile Include="Assets/Scripts/GameManager/FinalScore.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUI.cs" />
     <Compile Include="Assets/Scripts/GameManager/GameOver.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets/Scripts/CountHats.cs" />
+    <Compile Include="Assets/Scripts/Hats/CountHats.cs" />
     <Compile Include="Assets/Scripts/Obstacles/ObstacleGood.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUtils.cs" />
     <Compile Include="Assets/Scripts/Obstacles/StartAnimation.cs" />
-    <Compile Include="Assets/Scripts/HatScore.cs" />
+    <Compile Include="Assets/Scripts/Hats/HatScore.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleSprite.cs" />
-    <Compile Include="Assets/Scripts/PlayAnimation.cs" />
+    <Compile Include="Assets/Scripts/Animations/PlayAnimation.cs" />
+    <Compile Include="Assets/Scripts/Animations/DragonflyAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

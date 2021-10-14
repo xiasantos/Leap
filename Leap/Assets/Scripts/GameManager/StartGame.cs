@@ -17,6 +17,12 @@ public class StartGame : MonoBehaviour
     {
         if (gameRuning)
         {
+            if (Time.timeScale > 0.01f)
+            {
+                Time.timeScale = Mathf.Clamp(Time.timeScale + 0.00015f, 1.0f, 10.0f);
+                Debug.Log(Time.timeScale);
+            }
+
             return;
         }
 

@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public AudioSource frogSound;
+
+    private float storedTimeScale = 1.0f;
 
     private void Update()
     {
@@ -14,17 +14,18 @@ public class PauseMenu : MonoBehaviour
             Pause();
         }
     }
+
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        storedTimeScale = Time.timeScale;
+        Time.timeScale = 0.0f;
         frogSound.Play();
+        pauseMenuUI.SetActive(true);
     }
 
-   public void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-
+        Time.timeScale = storedTimeScale;
     }
 }

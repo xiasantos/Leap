@@ -39,10 +39,10 @@ public class ScoreManager : MonoBehaviour
             return;
         }
 
-        if (player != null)
+        if (player != null && Time.timeScale > 0.001f)
         {
-            score += Time.fixedDeltaTime;
-            scoreText.text = ((int)score).ToString();
+            score += Time.fixedUnscaledDeltaTime;
+            scoreText.text = $"{(int)score}";
         }
     }
 
