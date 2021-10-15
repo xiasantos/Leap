@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4768776d0e847338a4190f19d70e8b, type: 3}
+  m_Name: StrawberryPoints
+  m_EditorClassIdentifier: 
+  pointText: {fileID: -6248283651966394511, guid: a43242b2e7815493397f93082fedb2f1, type: 3}
+  points: 5

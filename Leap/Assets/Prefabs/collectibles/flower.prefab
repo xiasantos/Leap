@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 57181918fbbf949f19b12e95f48c95e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -162,3 +162,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 3
   countHatsObject: {fileID: 11400000, guid: 8abb2ae77076a439d81607be0a45a55a, type: 2}
+  pointAnimation: {fileID: 11400000, guid: d4d5da36e13a44d7aa04f228c344e9a8, type: 2}
+  pointTXT: {fileID: 8494652987357263481, guid: b1c6da194957f47899a3203aed2d9f7b, type: 3}

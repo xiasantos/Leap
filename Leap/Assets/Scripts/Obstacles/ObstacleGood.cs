@@ -7,6 +7,8 @@ public class ObstacleGood : MonoBehaviour
     ScoreManager scoreManager;
     public int points;
     public CountHats countHatsObject;
+    public PointAnimation pointAnimation;
+    public GameObject pointTXT;
 
     void Start()
     {
@@ -24,6 +26,8 @@ public class ObstacleGood : MonoBehaviour
         {
             scoreManager.AddScore(points);
             countHatsObject.AddCount(1);
+            Instantiate(pointTXT, transform.position, transform.rotation);
+            pointAnimation.Animate();
             Destroy(this.gameObject);
         }
 
