@@ -11,6 +11,7 @@ public class GameOver : MonoBehaviour
     public GameObject player;
     public FinalScore finalScoreComponent;
     public TextMeshProUGUI scoreManagerComponent;
+    public TextMeshProUGUI highScore;
 
     private void Awake()
     {
@@ -21,8 +22,10 @@ public class GameOver : MonoBehaviour
         if (player == null)
         {
             gameOverPanel.SetActive(true);
+            Cursor.visible = true;
             toHide.SetActive(false);
             finalScoreComponent.SetScore(scoreManagerComponent.text);
+            highScore.text = PlayerPrefs.GetInt("HighScore",0).ToString();
         }
     }
 

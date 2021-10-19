@@ -8,7 +8,8 @@ public class FinalScore : MonoBehaviour
     public TextMeshProUGUI score;
 
     public void SetScore(string txt)
-    { score.text = txt;
+    {
+        score.text = txt;
     }
 
 }

@@ -7,7 +7,6 @@ public class StartGame : MonoBehaviour
 {
     public Animator playerAnimator;
     public GameObject star;
-    public GameObject pause;
     public TextMeshProUGUI textComponent;
     public static event Action GameStarted;
 
@@ -29,7 +28,7 @@ public class StartGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             gameRuning = true;
-            pause.SetActive(true);
+            Cursor.visible = false;
             star.SetActive(false);
             textComponent.enabled = false;
             GameStarted?.Invoke();

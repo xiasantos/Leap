@@ -6,7 +6,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     private GameObject player;
-
+    public AudioSource dieSound;
 
     void Start()
     {
@@ -15,14 +15,18 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+      
+        if (collision.gameObject.CompareTag("Player"))
+        {
+                dieSound.Play();
+                Destroy(player);
+        }
+
         if (collision.gameObject.CompareTag("Border"))
         {
             Destroy(this.gameObject);
         }
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            { Destroy(player); }
-        }
+
     }
 }
 

@@ -21,11 +21,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0.0f;
         frogSound.Play();
         pauseMenuUI.SetActive(true);
+        Cursor.visible = true;
     }
 
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        Cursor.visible = false;
         Time.timeScale = storedTimeScale;
     }
 }

@@ -43,6 +43,11 @@ public class ScoreManager : MonoBehaviour
         {
             score += Time.fixedUnscaledDeltaTime;
             scoreText.text = $"{(int)score}";
+
+            if (score > PlayerPrefs.GetInt("HighScore", 0))
+            {
+                PlayerPrefs.SetInt("HighScore", (int)score);
+            }
         }
     }
 

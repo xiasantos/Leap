@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
     public Vector2 jumpHeight;
     public float playerSpeed;
     public Animator frogAnimator;
-    public AudioSource dieSound;
     public AudioSource crunchSound;
 
     private Vector2 playerDirection;
@@ -79,11 +78,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Collectible"))
         {
             crunchSound.Play();
-        }
-
-        else if (collision.gameObject.CompareTag("Obstacle"))
-        {
-            dieSound.Play();
         }
     }
 }

@@ -7,6 +7,7 @@ public class ObstacleWAnimation : MonoBehaviour
 {
     private GameObject player;
     private bool attacking;
+    public AudioSource dieSound;
 
     void Start()
     {
@@ -19,9 +20,10 @@ public class ObstacleWAnimation : MonoBehaviour
         if (attacking && collision.gameObject.CompareTag("Player"))
         {
             if (player != null)
-            { Destroy(player); }
-            
-
+            {
+                dieSound.Play();
+                Destroy(player);
+            }
         }
     }
 
