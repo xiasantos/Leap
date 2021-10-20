@@ -500,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/50
+  m_text: 0/10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
   m_sharedMaterial: {fileID: -3129615732818424525, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
@@ -673,7 +673,7 @@ MonoBehaviour:
   hatScoreText: {fileID: 244411776}
   frogName: Farfalle
   hatIMG: {fileID: 1365112331}
-  valueToCollect: 500
+  valueToCollect: 50
 --- !u!1 &244411774
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/500
+  m_text: 0/50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
   m_sharedMaterial: {fileID: -3129615732818424525, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
@@ -970,7 +970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &387580224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3071,7 +3071,7 @@ MonoBehaviour:
   hatScoreText: {fileID: 1376117038}
   frogName: Ravioli
   hatIMG: {fileID: 544625501}
-  valueToCollect: 100
+  valueToCollect: 25
 --- !u!4 &1119730342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8277435765443887934, guid: edebe96e028be48a0934e5a5e4b0accd, type: 3}
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/100
+  m_text: 0/25
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
   m_sharedMaterial: {fileID: -3129615732818424525, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
@@ -3865,7 +3865,7 @@ MonoBehaviour:
   hatScoreText: {fileID: 130160849}
   frogName: Penne
   hatIMG: {fileID: 1065723905}
-  valueToCollect: 50
+  valueToCollect: 10
 --- !u!1 &1521398238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,7 +4856,7 @@ MonoBehaviour:
   hatScoreText: {fileID: 1922873840}
   frogName: Linguine
   hatIMG: {fileID: 694636495}
-  valueToCollect: 1000
+  valueToCollect: 100
 --- !u!1 &1861017885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5612,7 +5612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/1000
+  m_text: 0/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
   m_sharedMaterial: {fileID: -3129615732818424525, guid: e6491ba4bbad94b2ea921e36947b5832, type: 2}
